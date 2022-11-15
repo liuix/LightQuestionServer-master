@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: lightquestion
+    password: 72rAyTHb68afWdwP
+    url: jdbc:mysql://39.98.73.138:3306/lightquestion
+  servlet:
+    multipart:
+      max-file-size: 1GB
+      max-request-size: 1GB
+  redis:
+    host: 39.98.73.138
+    port: 6379
+    password: QQ2275381952mc
+    connect-timeout: 5000
+    database: 0
+server:
+  servlet:
+    context-path: /api
+  port: 8080
+aliyun:
+  sms:
+    accessKeyId: LTAI5t8xmEqujM9eSfgADdL8
+    accessKeySecret: 3FOPMXohlxfoEpb4fiCIj4f5tW3ruv
+    endpoint: dysmsapi.aliyuncs.com
+    sMVCode:
+      signName: 阿里云短信测试
+      templateCode: SMS_154950909
+      limitTime: 5
